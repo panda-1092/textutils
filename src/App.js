@@ -7,12 +7,11 @@ import About from './components/About';
 
 import React, { useState } from 'react';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from "react-router-dom";
 
 
 function App() {
@@ -38,19 +37,20 @@ function App() {
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
      <Navbar title="Textutils" About="About" mode={mode} toogle={toogle} />
      <div className="container my-3">
-     <Switch>
+     {/* <Switch>
           <Route exact path="/about">
             <About />
           </Route>
           <Route exact path="/">
-          <TextForm heading="Enter the text to analyze" mode={mode} />
+         
           </Route>
-      </Switch>
+      </Switch> */}
+       <TextForm heading="Enter the text to analyze" mode={mode} />
      </div>
-    </Router>
+    {/* </Router> */}
     </>
   );
 }
